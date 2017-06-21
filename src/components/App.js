@@ -7,7 +7,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      numbers: [1, 2, 4, 10, 5, 8, 11, 9],
+      numbers: [],
       guesses: []
     };
   }
@@ -26,10 +26,20 @@ export default class App extends React.Component {
       this.setState({ guesses: [...this.state.guesses, false] });
     }
   }
-
-
+  
+  newGame(cardsArray) {
+    for(let i = cardsArray.length; i; i--){
+        let j = Math.floor(Math.random() * i);
+        [cardsArray[i-1], cardsArray[j]] = [cardsArray[j], cardsArray[i-1]];
+    }
+    this.setState({
+        numbers: cardsArray,
+        guesses: []
+    })
+  }
 
   render() {
+    const testArray =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     const stateGuess = this.state.guesses;
     const gameResult = function() {
       if (stateGuess.length === 0) {
@@ -48,6 +58,7 @@ export default class App extends React.Component {
       <div className='app'>
         {/* <button onClick={() => console.log('clicked')}>Start Game!</button> */}
         <Output value={this.state.numbers.slice(0, gamePosition+1)} />
+        <button onClick={() => console.log(this.newGame(testArray))}>New Game</button>
         <button onClick={() => this.compareNumbers('higher', this.state.numbers[gamePosition], this.state.numbers[gamePosition + 1])}>Higher</button>
         <button onClick={() => this.compareNumbers('lower', this.state.numbers[gamePosition], this.state.numbers[gamePosition + 1])}>Lower</button>
         <Output value={[gameResult()]} />
