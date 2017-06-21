@@ -55,17 +55,19 @@ export default class App extends React.Component {
     };
     const gamePosition = stateGuess.length;
     return (
-      <div className='app'>
-        <Output value={this.state.cardsArray.slice(0, gamePosition+1)} />
-        <ButtonControls
-          stateCards={this.state.cardsArray}
-          newGame={(cardsArray) => this.newGame(cardsArray)}
-          compareNumbers={(guess, currentNum, nextNum) => this.compareNumbers(guess, currentNum, nextNum)}
-          gamePosition={gamePosition}
-          gameResult={gameResult()}
-        />
-        <Output value={[gameResult()]} />
-      </div>
+      <body className='body'>
+        <div className='app'>
+          <Output value={this.state.cardsArray.slice(0, gamePosition+1)} />
+          <ButtonControls
+            stateCards={this.state.cardsArray}
+            newGame={(cardsArray) => this.newGame(cardsArray)}
+            compareNumbers={(guess, currentNum, nextNum) => this.compareNumbers(guess, currentNum, nextNum)}
+            gamePosition={gamePosition}
+            gameResult={gameResult()}
+          />
+          <Output value={[gameResult()]} />
+        </div>
+      </body>
     );
   }
 }
