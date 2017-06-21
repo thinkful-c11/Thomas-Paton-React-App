@@ -34,21 +34,23 @@ export default class App extends React.Component {
     const gameResult = function() {
       if (stateGuess.length === 0) {
         return '';
+      } else if (stateGuess[stateGuess.length-1] === false) {
+          return 'Game Over!'
       }
-      else if (stateGuess[stateGuess.length - 1] === true) {
-        return 'Correct!';
+      else if (stateGuess[stateGuess.length - 1] === true && stateGuess.length >= 6) {
+        return 'You Won!';
       } else {
-        return 'Wrong!';
+        return 'Correct!';
       }
     };
     const gamePosition = stateGuess.length;
     return (
       <div className='app'>
         {/* <button onClick={() => console.log('clicked')}>Start Game!</button> */}
-        <Output value={this.state.numbers[0]} />
+        <Output value={this.state.numbers.slice(0, gamePosition+1)} />
         <button onClick={() => this.compareNumbers('higher', this.state.numbers[gamePosition], this.state.numbers[gamePosition + 1])}>Higher</button>
         <button onClick={() => this.compareNumbers('lower', this.state.numbers[gamePosition], this.state.numbers[gamePosition + 1])}>Lower</button>
-        <Output value={gameResult()} />
+        <Output value={[gameResult()]} />
       </div>
     );
   }
