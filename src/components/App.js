@@ -28,13 +28,16 @@ export default class App extends React.Component {
     }
   }
 
-  newGame(cardsArray) {
-    for(let i = cardsArray.length; i; i--){
+  newGame() {
+    const cardsId = this.props.cards.map(card => {
+      return card.id;
+    });
+    for(let i = cardsId.length; i; i--){
       let j = Math.floor(Math.random() * i);
-      [cardsArray[i-1], cardsArray[j]] = [cardsArray[j], cardsArray[i-1]];
+      [cardsId[i-1], cardsId[j]] = [cardsId[j], cardsId[i-1]];
     }
     this.setState({
-      cardsArray: cardsArray,
+      cardsArray: cardsId,
       guesses: []
     });
   }
@@ -59,7 +62,7 @@ export default class App extends React.Component {
         <Output value={this.state.cardsArray.slice(0, gamePosition+1)} />
         <ButtonControls
           stateCards={this.state.cardsArray}
-          newGame={(cardsArray) => this.newGame(cardsArray)}
+          newGame={() => this.newGame()}
           compareNumbers={(guess, currentNum, nextNum) => this.compareNumbers(guess, currentNum, nextNum)}
           gamePosition={gamePosition}
           gameResult={gameResult()}
