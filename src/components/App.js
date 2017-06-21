@@ -1,6 +1,7 @@
 import React from 'react';
 import Output from './Output';
 import ButtonControls from './ButtonControls';
+import CardDisplay from './CardDisplay';
 import './App.css';
 
 
@@ -13,12 +14,12 @@ export default class App extends React.Component {
     };
   }
 
-  compareNumbers(guess, currentNum, nextNum) {
+  compareNumbers(guess, currentIndex, nextIndex) {
     function greaterThan() {
-      return nextNum > currentNum;
+      return nextIndex > currentIndex;
     }
     function lessThan() {
-      return nextNum < currentNum;
+      return nextIndex < currentIndex;
     }
 
     if ((guess === 'higher') ? greaterThan() : lessThan()) {
@@ -28,19 +29,28 @@ export default class App extends React.Component {
     }
   }
 
-  newGame(cardsArray) {
-    for(let i = cardsArray.length; i; i--){
+  //immutability problem
+  newGame() {
+    const cards = this.props.cards.slice();
+    for(let i = cards.length; i; i--){
       let j = Math.floor(Math.random() * i);
-      [cardsArray[i-1], cardsArray[j]] = [cardsArray[j], cardsArray[i-1]];
+      [cards[i-1], cards[j]] = [cards[j], cards[i-1]];
     }
     this.setState({
-      cardsArray: cardsArray,
+      cardsArray: cards,
       guesses: []
     });
   }
 
   render() {
     const stateGuess = this.state.guesses;
+    const gamePosition = stateGuess.length;
+    const cardNames = this.state.cardsArray.map(card => {
+      return card.name;
+    });
+    const cardImgs = this.state.cardsArray.map(card => {
+      return card.svg;
+    });
     const gameResult = function() {
       if (stateGuess.length === 0) {
         return '';
@@ -53,21 +63,20 @@ export default class App extends React.Component {
         return 'Correct!';
       }
     };
-    const gamePosition = stateGuess.length;
+
     return (
-      <body className='body'>
-        <div className='app'>
-          <Output value={this.state.cardsArray.slice(0, gamePosition+1)} />
-          <ButtonControls
-            stateCards={this.state.cardsArray}
-            newGame={(cardsArray) => this.newGame(cardsArray)}
-            compareNumbers={(guess, currentNum, nextNum) => this.compareNumbers(guess, currentNum, nextNum)}
-            gamePosition={gamePosition}
-            gameResult={gameResult()}
-          />
-          <Output value={[gameResult()]} />
-        </div>
-      </body>
+      <div className='app'>
+        <Output value={cardNames.slice(0, gamePosition+1)} />
+        <CardDisplay cardImgs={cardImgs.slice(0, gamePosition+1)} />
+        <ButtonControls
+          stateCards={this.state.cardsArray}
+          newGame={() => this.newGame()}
+          compareNumbers={(guess, currentIndex, nextIndex) => this.compareNumbers(guess, currentIndex, nextIndex)}
+          gamePosition={gamePosition}
+          gameResult={gameResult()}
+        />
+        <Output value={[gameResult()]} />
+      </div>
     );
   }
 }
