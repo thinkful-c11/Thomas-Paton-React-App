@@ -13,12 +13,12 @@ export default class App extends React.Component {
     };
   }
 
-  compareNumbers(guess, currentNum, nextNum) {
+  compareNumbers(guess, currentIndex, nextIndex) {
     function greaterThan() {
-      return nextNum > currentNum;
+      return nextIndex > currentIndex;
     }
     function lessThan() {
-      return nextNum < currentNum;
+      return nextIndex < currentIndex;
     }
 
     if ((guess === 'higher') ? greaterThan() : lessThan()) {
@@ -63,7 +63,7 @@ export default class App extends React.Component {
         <ButtonControls
           stateCards={this.state.cardsArray}
           newGame={() => this.newGame()}
-          compareNumbers={(guess, currentNum, nextNum) => this.compareNumbers(guess, currentNum, nextNum)}
+          compareNumbers={(guess, currentIndex, nextIndex) => this.compareNumbers(guess, currentIndex, nextIndex)}
           gamePosition={gamePosition}
           gameResult={gameResult()}
         />
