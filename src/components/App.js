@@ -1,6 +1,7 @@
 import React from 'react';
 import Output from './Output';
 import ButtonControls from './ButtonControls';
+import CardDisplay from './CardDisplay';
 import './App.css';
 
 
@@ -28,22 +29,28 @@ export default class App extends React.Component {
     }
   }
 
+  //immutability problem
   newGame() {
-    const cardsId = this.props.cards.map(card => {
-      return card.id;
-    });
-    for(let i = cardsId.length; i; i--){
+    const cards = this.props.cards.slice();
+    for(let i = cards.length; i; i--){
       let j = Math.floor(Math.random() * i);
-      [cardsId[i-1], cardsId[j]] = [cardsId[j], cardsId[i-1]];
+      [cards[i-1], cards[j]] = [cards[j], cards[i-1]];
     }
     this.setState({
-      cardsArray: cardsId,
+      cardsArray: cards,
       guesses: []
     });
   }
 
   render() {
     const stateGuess = this.state.guesses;
+    const gamePosition = stateGuess.length;
+    const cardNames = this.state.cardsArray.map(card => {
+      return card.name;
+    });
+    const cardImgs = this.state.cardsArray.map(card => {
+      return card.svg;
+    });
     const gameResult = function() {
       if (stateGuess.length === 0) {
         return '';
@@ -56,10 +63,11 @@ export default class App extends React.Component {
         return 'Correct!';
       }
     };
-    const gamePosition = stateGuess.length;
+
     return (
       <div className='app'>
-        <Output value={this.state.cardsArray.slice(0, gamePosition+1)} />
+        <Output value={cardNames.slice(0, gamePosition+1)} />
+        <CardDisplay cardImgs={cardImgs.slice(0, gamePosition+1)} />
         <ButtonControls
           stateCards={this.state.cardsArray}
           newGame={() => this.newGame()}

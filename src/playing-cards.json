@@ -3,312 +3,312 @@
     "id": 1,
     "name": "Two of Clubs",
     "value": 2,
-    "svg": "./assets/2_of_clubs.svg"
+    "svg": "/assets/2_of_clubs.svg"
   },
   {
     "id": 2,
     "name": "Three of Clubs",
     "value": 3,
-    "svg": "./assets/3_of_clubs.svg"
+    "svg": "/assets/3_of_clubs.svg"
   },
   {
     "id": 3,
     "name": "Four of Clubs",
     "value": 4,
-    "svg": "./assets/4_of_clubs.svg"
+    "svg": "/assets/4_of_clubs.svg"
   },
   {
     "id": 4,
     "name": "Five of Clubs",
     "value": 5,
-    "svg": "./assets/5_of_clubs.svg"
+    "svg": "/assets/5_of_clubs.svg"
   },
   {
     "id": 5,
     "name": "Six of Clubs",
     "value": 6,
-    "svg": "./assets/6_of_clubs.svg"
+    "svg": "/assets/6_of_clubs.svg"
   },
   {
     "id": 6,
     "name": "Seven of Clubs",
     "value": 7,
-    "svg": "./assets/7_of_clubs.svg"
+    "svg": "/assets/7_of_clubs.svg"
   },
   {
     "id": 7,
     "name": "Eight of Clubs",
     "value": 8,
-    "svg": "./assets/8_of_clubs.svg"
+    "svg": "/assets/8_of_clubs.svg"
   },
   {
     "id": 8,
     "name": "Nine of Clubs",
     "value": 9,
-    "svg": "./assets/9_of_clubs.svg"
+    "svg": "/assets/9_of_clubs.svg"
   },
   {
     "id": 9,
     "name": "Ten of Clubs",
     "value": 10,
-    "svg": "./assets/10_of_clubs.svg"
+    "svg": "/assets/10_of_clubs.svg"
   },
   {
     "id": 10,
     "name": "Jack of Clubs",
     "value": 11,
-    "svg": "./assets/jack_of_clubs.svg"
+    "svg": "/assets/jack_of_clubs.svg"
   },
   {
     "id": 11,
     "name": "Queen of Clubs",
     "value": 12,
-    "svg": "./assets/queen_of_clubs.svg"
+    "svg": "/assets/queen_of_clubs.svg"
   },
   {
     "id": 12,
     "name": "King of Clubs",
     "value": 13,
-    "svg": "./assets/king_of_clubs.svg"
+    "svg": "/assets/king_of_clubs.svg"
   },
   {
     "id": 13,
     "name": "Ace of Clubs",
     "value": 14,
-    "svg": "./assets/ace_of_clubs.svg"
+    "svg": "/assets/ace_of_clubs.svg"
   },
   {
     "id": 14,
     "name": "Two of Diamonds",
     "value": 2,
-    "svg": "./assets/2_of_diamonds.svg"
+    "svg": "/assets/2_of_diamonds.svg"
   },
   {
     "id": 15,
     "name": "Three of Diamonds",
     "value": 3,
-    "svg": "./assets/3_of_diamonds.svg"
+    "svg": "/assets/3_of_diamonds.svg"
   },
   {
     "id": 16,
     "name": "Four of Diamonds",
     "value": 4,
-    "svg": "./assets/4_of_diamonds.svg"
+    "svg": "/assets/4_of_diamonds.svg"
   },
   {
     "id": 17,
     "name": "Five of Diamonds",
     "value": 5,
-    "svg": "./assets/5_of_diamonds.svg"
+    "svg": "/assets/5_of_diamonds.svg"
   },
   {
     "id": 18,
     "name": "Six of Diamonds",
     "value": 6,
-    "svg": "./assets/6_of_diamonds.svg"
+    "svg": "/assets/6_of_diamonds.svg"
   },
   {
     "id": 19,
     "name": "Seven of Diamonds",
     "value": 7,
-    "svg": "./assets/7_of_diamonds.svg"
+    "svg": "/assets/7_of_diamonds.svg"
   },
   {
     "id": 20,
     "name": "Eight of Diamonds",
     "value": 8,
-    "svg": "./assets/8_of_diamonds.svg"
+    "svg": "/assets/8_of_diamonds.svg"
   },
   {
     "id": 21,
     "name": "Nine of Diamonds",
     "value": 9,
-    "svg": "./assets/9_of_diamonds.svg"
+    "svg": "/assets/9_of_diamonds.svg"
   },
   {
     "id": 22,
     "name": "Ten of Diamonds",
     "value": 10,
-    "svg": "./assets/10_of_diamonds.svg"
+    "svg": "/assets/10_of_diamonds.svg"
   },
   {
     "id": 23,
     "name": "Jack of Diamonds",
     "value": 11,
-    "svg": "./assets/jack_of_diamonds.svg"
+    "svg": "/assets/jack_of_diamonds.svg"
   },
   {
     "id": 24,
     "name": "Queen of Diamonds",
     "value": 12,
-    "svg": "./assets/queen_of_diamonds.svg"
+    "svg": "/assets/queen_of_diamonds.svg"
   },
   {
     "id": 25,
     "name": "King of Diamonds",
     "value": 13,
-    "svg": "./assets/king_of_diamonds.svg"
+    "svg": "/assets/king_of_diamonds.svg"
   },
   {
     "id": 26,
     "name": "Ace of Diamonds",
     "value": 14,
-    "svg": "./assets/ace_of_diamonds.svg"
+    "svg": "/assets/ace_of_diamonds.svg"
   },
   {
     "id": 27,
     "name": "Two of Hearts",
     "value": 2,
-    "svg": "./assets/2_of_hearts.svg"
+    "svg": "/assets/2_of_hearts.svg"
   },
   {
     "id": 28,
     "name": "Three of Hearts",
     "value": 3,
-    "svg": "./assets/3_of_hearts.svg"
+    "svg": "/assets/3_of_hearts.svg"
   },
   {
     "id": 29,
     "name": "Four of Hearts",
     "value": 4,
-    "svg": "./assets/4_of_hearts.svg"
+    "svg": "/assets/4_of_hearts.svg"
   },
   {
     "id": 30,
     "name": "Five of Hearts",
     "value": 5,
-    "svg": "./assets/5_of_hearts.svg"
+    "svg": "/assets/5_of_hearts.svg"
   },
   {
     "id": 31,
     "name": "Six of Hearts",
     "value": 6,
-    "svg": "./assets/6_of_hearts.svg"
+    "svg": "/assets/6_of_hearts.svg"
   },
   {
     "id": 32,
     "name": "Seven of Hearts",
     "value": 7,
-    "svg": "./assets/7_of_hearts.svg"
+    "svg": "/assets/7_of_hearts.svg"
   },
   {
     "id": 33,
     "name": "Eight of Hearts",
     "value": 34,
-    "svg": "./assets/8_of_hearts.svg"
+    "svg": "/assets/8_of_hearts.svg"
   },
   {
     "id": 34,
     "name": "Nine of Hearts",
     "value": 9,
-    "svg": "./assets/9_of_hearts.svg"
+    "svg": "/assets/9_of_hearts.svg"
   },
   {
     "id": 35,
     "name": "Ten of Hearts",
     "value": 10,
-    "svg": "./assets/10_of_hearts.svg"
+    "svg": "/assets/10_of_hearts.svg"
   },
   {
     "id": 36,
     "name": "Jack of Hearts",
     "value": 11,
-    "svg": "./assets/jack_of_hearts.svg"
+    "svg": "/assets/jack_of_hearts.svg"
   },
   {
     "id": 37,
     "name": "Queen of Hearts",
     "value": 12,
-    "svg": "./assets/queen_of_hearts.svg"
+    "svg": "/assets/queen_of_hearts.svg"
   },
   {
     "id": 38,
     "name": "King of Hearts",
     "value": 13,
-    "svg": "./assets/king_of_hearts.svg"
+    "svg": "/assets/king_of_hearts.svg"
   },
   {
     "id": 39,
     "name": "Ace of Hearts",
     "value": 14,
-    "svg": "./assets/ace_of_hearts.svg"
+    "svg": "/assets/ace_of_hearts.svg"
   },
   {
     "id": 40,
     "name": "Two of Spades",
     "value": 2,
-    "svg": "./assets/2_of_spades.svg"
+    "svg": "/assets/2_of_spades.svg"
   },
   {
     "id": 41,
     "name": "Three of Spades",
     "value": 3,
-    "svg": "./assets/3_of_spades.svg"
+    "svg": "/assets/3_of_spades.svg"
   },
   {
     "id": 42,
     "name": "Four of Spades",
     "value": 4,
-    "svg": "./assets/4_of_spades.svg"
+    "svg": "/assets/4_of_spades.svg"
   },
   {
     "id": 43,
     "name": "Five of Spades",
     "value": 5,
-    "svg": "./assets/5_of_spades.svg"
+    "svg": "/assets/5_of_spades.svg"
   },
   {
     "id": 44,
     "name": "Six of Spades",
     "value": 6,
-    "svg": "./assets/6_of_spades.svg"
+    "svg": "/assets/6_of_spades.svg"
   },
   {
     "id": 45,
     "name": "Seven of Spades",
     "value": 7,
-    "svg": "./assets/7_of_spades.svg"
+    "svg": "/assets/7_of_spades.svg"
   },
   {
     "id": 46,
     "name": "Eight of Spades",
     "value": 8,
-    "svg": "./assets/8_of_spades.svg"
+    "svg": "/assets/8_of_spades.svg"
   },
   {
     "id": 47,
     "name": "Nine of Spades",
     "value": 9,
-    "svg": "./assets/9_of_spades.svg"
+    "svg": "/assets/9_of_spades.svg"
   },
   {
     "id": 48,
     "name": "Ten of Spades",
     "value": 10,
-    "svg": "./assets/10_of_spades.svg"
+    "svg": "/assets/10_of_spades.svg"
   },
   {
     "id": 49,
     "name": "Jack of Spades",
     "value": 11,
-    "svg": "./assets/jack_of_spades.svg"
+    "svg": "/assets/jack_of_spades.svg"
   },
   {
     "id": 50,
     "name": "Queen of Spades",
     "value": 12,
-    "svg": "./assets/queen_of_spades.svg"
+    "svg": "/assets/queen_of_spades.svg"
   },
   {
     "id": 51,
     "name": "King of Spades",
     "value": 13,
-    "svg": "./assets/king_of_spades.svg"
+    "svg": "/assets/king_of_spades.svg"
   },
   {
     "id": 52,
     "name": "Ace of Spades",
     "value": 14,
-    "svg": "./assets/ace_of_spades.svg"
+    "svg": "/assets/ace_of_spades.svg"
   }
 ]
