@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Two of Clubs",
+    "value": 2,
+    "svg": "./assets/2_of_clubs.svg"
+  },
+  {
+    "id": 2,
+    "name": "Three of Clubs",
+    "value": 3,
+    "svg": "./assets/3_of_clubs.svg"
+  },
+  {
+    "id": 3,
+    "name": "Four of Clubs",
+    "value": 4,
+    "svg": "./assets/4_of_clubs.svg"
+  }
+]
